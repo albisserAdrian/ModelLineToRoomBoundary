@@ -4,8 +4,9 @@ public void ModelLineToRoomBoundary()
 	UIDocument uidoc = this.ActiveUIDocument;
 	Document doc = uidoc.Document;
 			
-			
 	View activeView = doc.ActiveView;
+
+	CurveArray curves = new CurveArray();
 
 	Selection sel = uidoc.Selection;
 	PickFilter selFilter = new PickFilter();
